@@ -4,20 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <iframe frameborder="0" src="https://itch.io/embed/2489367" width="552" height="167"><a href="https://freyjamentado.itch.io/swashbucklin-showdown">Swashbucklin Showdown by freyjaMentado</a></iframe>
     </div>
   );
 }
