@@ -4,16 +4,22 @@ import './index.css';
 import Root from './pages/homePage/Root';
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import Portfolio from './pages/portfolio/Portfolio';
+import ResponsiveAppBar from './pages/navBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <ResponsiveAppBar />,
     errorElement: <ErrorPage />,
   },
   {
