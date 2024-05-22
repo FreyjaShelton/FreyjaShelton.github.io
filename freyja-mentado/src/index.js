@@ -8,7 +8,7 @@ import Source from './pages/source/Source';
 import ResponsiveAppBar from './pages/navBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import '@fontsource/roboto/300.css';
@@ -17,7 +17,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <ResponsiveAppBar />,
