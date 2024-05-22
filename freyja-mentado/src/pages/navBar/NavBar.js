@@ -38,13 +38,13 @@ export default function ResponsiveAppBar() {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <Button
-                  href={`/Portfolio`}
+                  href={`#/Portfolio`}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Portfolio
                 </Button>
                 <Button
-                  href={`/Source`}
+                  href={`#/Source`}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Source Code
