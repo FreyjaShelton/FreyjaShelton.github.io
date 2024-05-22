@@ -4,6 +4,7 @@ import './index.css';
 import Root from './pages/homePage/Root';
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import Portfolio from './pages/portfolio/Portfolio';
+import Source from './pages/source/Source';
 import ResponsiveAppBar from './pages/navBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -21,12 +22,24 @@ const router = createBrowserRouter([
     path: "/",
     element: <ResponsiveAppBar />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Root />,
+      },
+      {
+        path: "portfolio",
+        element: <Portfolio />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "source",
+        element: <Source />,
+        errorElement: <ErrorPage />,
+      },
+    ],
   },
-  {
-    path: "portfolio",
-    element: <Portfolio />,
-    errorElement: <ErrorPage />,
-  },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

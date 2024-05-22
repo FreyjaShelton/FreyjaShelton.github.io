@@ -1,8 +1,7 @@
 export default function Root() {
     return (
         <div className="Root">
-            <a href={`/portfolio`}>Portfolio</a>
-            
+            <p>And this is where I talk about myself</p>
         </div>
     );
   }
