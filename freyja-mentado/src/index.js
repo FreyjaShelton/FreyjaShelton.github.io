@@ -8,8 +8,8 @@ import Source from './pages/source/Source';
 import ResponsiveAppBar from './pages/navBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 import {
-  createHashRouter,
-  RouterProvider,
+	createHashRouter,
+	RouterProvider,
 } from "react-router-dom";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -18,35 +18,35 @@ import '@fontsource/roboto/700.css';
 
 
 const router = createHashRouter([
-  {
-    path: "/",
-    element: <ResponsiveAppBar />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <Root />,
-      },
-      {
-        path: "portfolio",
-        element: <Portfolio />,
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "source",
-        element: <Source />,
-        errorElement: <ErrorPage />,
-      },
-    ],
-  },
-  
+	{
+		path: "/",
+		element: <ResponsiveAppBar />,
+		errorElement: <ErrorPage />,
+		children: [
+			{
+				path: "/",
+				element: <Root />,
+			},
+			{
+				path: "portfolio",
+				element: <Portfolio />,
+				errorElement: <ErrorPage />,
+			},
+			{
+				path: "source",
+				element: <Source />,
+				errorElement: <ErrorPage />,
+			},
+		],
+	},
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+	<React.StrictMode>
+		<RouterProvider router={router} />
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,10 +1,8 @@
-function Source() {
-    return (
-      <div className="Source">
-        <p>And this is where my source code would be.....IF I HAD ANY</p>
-      </div>
-    );
-  }
-  
-  export default Source;
-  
+export default function Source() {
+	return (
+		<div className="Source">
+			<p>This is the source code for this website</p>
+			<a href="https://github.com/FreyjaMentado/FreyjaMentado.github.io">Source Code</a>
+		</div>
+	);
+}
