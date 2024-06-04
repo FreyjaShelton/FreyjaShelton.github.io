@@ -5,6 +5,7 @@ import Root from './pages/homePage/Root';
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import Portfolio from './pages/portfolio/Portfolio';
 import Source from './pages/source/Source';
+import Types from './pages/test/Types';
 import ResponsiveAppBar from './pages/navBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -35,6 +36,11 @@ const router = createHashRouter([
 			{
 				path: "source",
 				element: <Source />,
+				errorElement: <ErrorPage />,
+			},
+			{
+				path: "types",
+				element: <Types />,
 				errorElement: <ErrorPage />,
 			},
 		],
