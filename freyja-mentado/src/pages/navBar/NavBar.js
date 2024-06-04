@@ -21,7 +21,6 @@ export default function ResponsiveAppBar() {
 							sx={{
 								mr: 2,
 								display: { xs: 'none', md: 'flex' },
-								fontFamily: 'monospace',
 								fontWeight: 700,
 								letterSpacing: '.3rem',
 								color: 'inherit',
@@ -30,7 +29,7 @@ export default function ResponsiveAppBar() {
 						>
 							Freyja Mentado
 						</Typography>
-						<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
+						<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
 							<Button
 								href={`#/Portfolio`}
 								sx={{ my: 2, color: 'white', display: 'block' }}
@@ -61,6 +60,15 @@ export default function ResponsiveAppBar() {
 			}}>
 				<Box sx={{ textAlign: "left" }}>
 					<Outlet />
+					<Container maxWidth="xl" alignItems='center' >
+						<p> </p>
+						<Typography
+							variant="body2"
+							sx={{
+								textAlign: 'center'
+							}}>© 2024 Freyja Mentado. All Rights Reserved.</Typography>
+						<p> </p>
+					</Container>
 				</Box>
 			</Box>
 		</div>
