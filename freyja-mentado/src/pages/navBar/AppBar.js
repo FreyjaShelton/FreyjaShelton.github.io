@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Outlet } from "react-router-dom";
 
+const pages = ["Portfolio", "Source"];
+
 export default function NewAppBar() {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -72,20 +74,16 @@ export default function NewAppBar() {
 									display: { xs: 'block', md: 'none' },
 								}}
 							>
-								<MenuItem
-									component='a'
-									href='#/Portfolio'
-									sx={{ my: 2, color: 'black', display: 'block' }}
-								>
-									Portfolio
-								</MenuItem>
-								<MenuItem
-									component='a'
-									href='#/Source'
-									sx={{ my: 2, color: 'black', display: 'block' }}
-								>
-									Source Code
-								</MenuItem>
+								{pages.map((page) => (
+									<MenuItem
+										key={page}
+										component='a'
+										href={`#/${page}`}
+										onClick={handleCloseNavMenu}>
+										<Typography textAlign="center">{page}</Typography>
+									</MenuItem>
+								))}
+
 							</Menu>
 						</Box>
 						<Typography
@@ -106,18 +104,17 @@ export default function NewAppBar() {
 							Freyja Mentado
 						</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-							<Button
-								href={`#/Portfolio`}
-								sx={{ my: 2, color: 'white', display: 'block' }}
-							>
-								Portfolio
-							</Button>
-							<Button
-								href={`#/Source`}
-								sx={{ my: 2, color: 'white', display: 'block' }}
-							>
-								Source Code
-							</Button>
+							{pages.map((page) => (
+								<Button
+									key={page}
+									onClick={handleCloseNavMenu}
+									component='a'
+									href={`#/${page}`}
+									sx={{ my: 2, color: 'white', display: 'block' }}
+								>
+									{page}
+								</Button>
+							))}
 						</Box>
 					</Toolbar>
 				</Container>

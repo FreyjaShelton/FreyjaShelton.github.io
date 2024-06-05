@@ -1,8 +1,8 @@
-import SwashbuckleCard from "./Swashbuckle";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
+import SwashbuckleCard from "./Swashbuckle";
 import PersonalSiteCard from "./PersonalSite";
 import MidwestCard from "./Midwest";
 import ObsidanoteCard from "./Obsidanote";

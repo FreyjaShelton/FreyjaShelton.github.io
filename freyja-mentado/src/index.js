@@ -6,7 +6,6 @@ import ErrorPage from "./pages/errorPage/ErrorPage";
 import Portfolio from './pages/portfolio/Portfolio';
 import Source from './pages/source/Source';
 import Types from './pages/test/Types';
-import ResponsiveAppBar from './pages/navBar/NavBar';
 import NewAppBar from './pages/navBar/AppBar';
 import reportWebVitals from './reportWebVitals';
 import {
