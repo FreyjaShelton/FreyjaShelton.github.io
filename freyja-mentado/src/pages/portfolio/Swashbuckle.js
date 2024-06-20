@@ -23,6 +23,7 @@ export default function SwashbuckleCard() {
 					I was the developer. 
 					My wife, Sephora, helped me with some of the art assets.
 					My friend, Lavonte Pugh, created the music.
+					The source code can be found <a href="https://github.com/FreyjaMentado/SlimeGame">here.</a>
 				</Typography>
 			</CardContent>
 		</Card>

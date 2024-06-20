@@ -8,6 +8,7 @@ import MidwestCard from "./Midwest";
 import ObsidanoteCard from "./Obsidanote";
 import MariposaCard from "./Mariposa";
 import RollWithItCard from "./RollWithIt";
+import TwisterCard from "./Twister";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,17 +24,17 @@ export default function Portfolio() {
 			<p>Completed Projects</p>
 			<Box sx={{ width: '100%' }}>
 				<Stack spacing={2}>
-					<Item><SwashbuckleCard></SwashbuckleCard></Item>
+					<SwashbuckleCard />
+					<TwisterCard />
 				</Stack>
 			</Box>
 			<p>WIP Projects</p>
 			<Box sx={{ width: '100%' }}>
 				<Stack spacing={2}>
-					<Item><PersonalSiteCard></PersonalSiteCard></Item>
-					<Item><MidwestCard></MidwestCard></Item>
-					<Item><ObsidanoteCard></ObsidanoteCard></Item>
-					<Item><MariposaCard></MariposaCard></Item>
-					<Item><RollWithItCard></RollWithItCard></Item>
+					<PersonalSiteCard />
+					<ObsidanoteCard />
+					<MariposaCard />
+					<RollWithItCard />
 				</Stack>
 			</Box>
 		</div>
