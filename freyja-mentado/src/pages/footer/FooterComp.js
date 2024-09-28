@@ -6,12 +6,13 @@ import Box from '@mui/material/Box';
 export default function FooterComp() {
 	return (
 		<footer>
+			<br/>
 			<Box sx={{
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",
 			}}>
-				<Box sx={{ textAlign: "left" }}>
+				<Box sx={{ textAlign: "center" }}>
 					<a href="https://www.linkedin.com/in/freyja-mentado/">
 						<img
 							src={linkedinLogo}
