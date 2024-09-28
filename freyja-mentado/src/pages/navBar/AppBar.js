@@ -13,7 +13,7 @@ import { Outlet } from "react-router-dom";
 
 const pages = ["Portfolio", "Source"];
 
-export default function NewAppBar() {
+export default function NavBar() {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 
 	const handleOpenNavMenu = (event) => {
@@ -123,19 +123,10 @@ export default function NewAppBar() {
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",
-				minHeight: "100vh",
+				minHeight: "80vh",
 			}}>
 				<Box sx={{ textAlign: "left" }}>
 					<Outlet />
-					<Container maxWidth="xl" alignItems='center' >
-						<p> </p>
-						<Typography
-							variant="body2"
-							sx={{
-								textAlign: 'center'
-							}}>© 2024 Freyja Mentado. All Rights Reserved.</Typography>
-						<p> </p>
-					</Container>
 				</Box>
 			</Box>
 		</div>

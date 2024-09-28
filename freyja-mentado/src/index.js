@@ -4,9 +4,10 @@ import './index.css';
 import Root from './pages/homePage/Root';
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import Portfolio from './pages/portfolio/Portfolio';
+import FooterComp from './pages/footer/FooterComp';
 import Source from './pages/source/Source';
 import Types from './pages/test/Types';
-import NewAppBar from './pages/navBar/AppBar';
+import NavBar from './pages/navBar/AppBar';
 import reportWebVitals from './reportWebVitals';
 import {
 	createHashRouter,
@@ -21,7 +22,7 @@ import '@fontsource/roboto/700.css';
 const router = createHashRouter([
 	{
 		path: "/",
-		element: <NewAppBar />,
+		element: <NavBar />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
@@ -52,6 +53,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<RouterProvider router={router} />
+		<FooterComp />
 	</React.StrictMode>
 );
 

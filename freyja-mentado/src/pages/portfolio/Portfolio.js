@@ -4,7 +4,6 @@ import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import SwashbuckleCard from "./Swashbuckle";
 import PersonalSiteCard from "./PersonalSite";
-import MidwestCard from "./Midwest";
 import ObsidanoteCard from "./Obsidanote";
 import MariposaCard from "./Mariposa";
 import RollWithItCard from "./RollWithIt";

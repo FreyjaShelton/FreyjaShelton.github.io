@@ -15,7 +15,7 @@ export default function PersonalSiteCard() {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           I am creating this website using React and Material UI for the front end. 
-		  It is being hosted using Github Pages.
+		  		It is being hosted using Github Pages.
         </Typography>
       </CardContent>
     </Card>
