@@ -5,7 +5,7 @@ import CardRoot from '../../components/CardRoot';
 export default function FinviCard() {
 	return (
 		<CardRoot title={"Finvi"}>
-			<Typography variant="body2" color="text.secondary">
+			<Typography variant="body2">
 				Managed a team of 12 developers in migrating desktop components to a
 				web app. Improved development efficiency by creating a Docker script to
 				automate environment setup. Built a web-based version of an existing desktop

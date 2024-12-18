@@ -12,7 +12,7 @@ export default function Source() {
 					<Typography gutterBottom variant="h5" component="div">
 						Source Code
 					</Typography>
-					<Typography variant="body2" color="text.secondary">
+					<Typography variant="body2"  >
 						This site was written in React and is using Material UI for styling. 
 						<br/>
 						Source Code for this website can be found <a href="https://github.com/FreyjaMentado/FreyjaMentado.github.io">here.</a>

@@ -2,59 +2,40 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Root from './pages/homePage/Root';
-import ErrorPage from "./pages/errorPage/ErrorPage";
-import Portfolio from './pages/portfolio/Portfolio';
 import FooterComp from './pages/footer/FooterComp';
-import Source from './pages/source/Source';
-import Types from './pages/test/Types';
-import NavBar from './pages/navBar/AppBar';
 import reportWebVitals from './reportWebVitals';
-import {
-	createHashRouter,
-	RouterProvider,
-} from "react-router-dom";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 
+import '@fontsource/noto-serif'; // Defaults to 400 weight
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-const router = createHashRouter([
-	{
-		path: "/",
-		element: <NavBar />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				path: "/",
-				element: <Root />,
-			},
-			{
-				path: "portfolio",
-				element: <Portfolio />,
-				errorElement: <ErrorPage />,
-			},
-			{
-				path: "source",
-				element: <Source />,
-				errorElement: <ErrorPage />,
-			},
-			{
-				path: "types",
-				element: <Types />,
-				errorElement: <ErrorPage />,
-			},
-		],
-	},
-
-]);
+const theme = createTheme({
+    palette: {
+        background: {
+            default: '#001a00', // Dark greenish-black background
+        },
+        text: {
+            primary: '#00ff00', // Bright green text
+        },
+    },
+    typography: {
+        fontFamily: 'Courier New, monospace', // Monospaced terminal font
+        allVariants: {
+            color: '#00ff00', // Green text
+        },
+    },
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-	<React.StrictMode>
-		<RouterProvider router={router} />
-		<FooterComp />
-	</React.StrictMode>
+	<ThemeProvider theme={theme}>
+		<CssBaseline />
+		<React.StrictMode >
+			<Root />
+			<FooterComp />
+		</React.StrictMode>
+	</ThemeProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

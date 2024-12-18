@@ -26,10 +26,15 @@ export default function NavBar() {
 
 	return (
 		<div>
-			<AppBar position="static">
+			<AppBar 
+				position="static"
+				sx={{
+					backgroundColor: '#c9a0dc',
+				}}
+			>
 				<Container maxWidth="xl">
 					<Toolbar disableGutters>
-						<Typography
+						{/* <Typography
 							variant="h6"
 							noWrap
 							component="a"
@@ -39,12 +44,12 @@ export default function NavBar() {
 								display: { xs: 'none', md: 'flex' },
 								fontWeight: 700,
 								letterSpacing: '.3rem',
-								color: 'inherit',
+								color: '#000',
 								textDecoration: 'none',
 							}}
 						>
 							Freyja Mentado
-						</Typography>
+						</Typography> */}
 						<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 							<IconButton
 								size="large"
@@ -52,7 +57,7 @@ export default function NavBar() {
 								aria-controls="menu-appbar"
 								aria-haspopup="true"
 								onClick={handleOpenNavMenu}
-								color="inherit"
+								color="#000"
 							>
 								<MenuIcon />
 							</IconButton>
@@ -95,9 +100,8 @@ export default function NavBar() {
 								mr: 2,
 								display: { xs: 'flex', md: 'none' },
 								flexGrow: 1,
-								fontWeight: 700,
-								letterSpacing: '.3rem',
-								color: 'inherit',
+								fontWeight: 300,
+								color: '#000',
 								textDecoration: 'none',
 							}}
 						>
@@ -110,7 +114,7 @@ export default function NavBar() {
 									onClick={handleCloseNavMenu}
 									component='a'
 									href={`#/${page}`}
-									sx={{ my: 2, color: 'white', display: 'block' }}
+									sx={{ my: 2, color: '#000', display: 'block' }}
 								>
 									{page}
 								</Button>
@@ -125,7 +129,9 @@ export default function NavBar() {
 				alignItems: "center",
 				minHeight: "80vh",
 			}}>
-				<Box sx={{ textAlign: "left" }}>
+				<Box sx={{ 
+					textAlign: "left",
+					}}>
 					<Outlet />
 				</Box>
 			</Box>

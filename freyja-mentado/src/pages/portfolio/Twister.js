@@ -5,7 +5,7 @@ import CardRoot from '../../components/CardRoot';
 export default function TwisterCard() {
 	return (
 		<CardRoot title={"Twister"}>
-			<Typography variant="body2" color="text.secondary">
+			<Typography variant="body2"  >
 				A game I created for the 2024 Crossroads Game Jam where you play
 				as a the truck from the movie Twister and try to chase after a
 				tornado and release science pods into the tornado!

@@ -1,5 +1,5 @@
-import githubLogo from './github-mark.png'
-import linkedinLogo from './LI-In-Bug.png'
+import githubLogo from './github-mark-white.png'
+import linkedinLogo from './In-White-72.png'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
@@ -13,7 +13,10 @@ export default function FooterComp() {
 				alignItems: "center",
 			}}>
 				<Box sx={{ textAlign: "center" }}>
-					<a href="https://www.linkedin.com/in/freyja-mentado/">
+					<a 
+						href="https://www.linkedin.com/in/freyja-mentado/"
+						style={{ marginRight: '16px' }}
+					>
 						<img
 							src={linkedinLogo}
 							alt="linkedin"
@@ -30,10 +33,11 @@ export default function FooterComp() {
 					<Typography
 						variant="body2"
 						sx={{
-							textAlign: 'center'
+							textAlign: 'center',
 						}}>© 2024 Freyja Mentado. All Rights Reserved.</Typography>
 				</Box>
 			</Box>
+			<br/>
 		</footer>
 	);
 }

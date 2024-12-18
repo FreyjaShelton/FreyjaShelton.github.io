@@ -5,7 +5,7 @@ import CardRoot from '../../components/CardRoot';
 export default function ObsidanoteCard() {
 	return (
 		<CardRoot title={"Obsidanote"}>
-			<Typography variant="body2" color="text.secondary">
+			<Typography variant="body2"  >
 				I am creating a note taking app that will attempt to combine 
 				the graph functionality of <a href="https://obsidian.md/">Obsidian</a> with 
 				the functionality of <a href="https://milanote.com/">Milanote.</a> This 

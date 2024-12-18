@@ -9,37 +9,37 @@ import TwisterCard from "./Twister";
 import FinviCard from "./Finvi";
 import Typography from '@mui/material/Typography';
 import SparqCard from './Sparq';
+import WIP from '../homePage/WIP';
+import { SliderTrack } from '@mui/material';
 
 export default function Portfolio() {
 	return (
 		<div className="Portfolio">
-			<br/>
-			<Typography gutterBottom variant="h5" component="div" align="center">
+			<Typography gutterBottom variant="h6" component="div" align="left">
 				Professional Career
 			</Typography>
 			<Box>
-				<Stack spacing={2}>
+				<Stack>
 					<SparqCard />
 					<FinviCard />
 				</Stack>
 			</Box>
 			<br/>
-			<Typography gutterBottom variant="h5" component="div" align="center">
+			<Typography gutterBottom variant="h6" component="div" align="left">
 				Completed Projects
 			</Typography>
 			<Box>
-				<Stack spacing={2}>
+				<Stack>
 					<SwashbuckleCard />
 					<TwisterCard />
 				</Stack>
 			</Box>
 			<br/>
-			<Typography gutterBottom variant="h5" component="div" align="center">
+			<Typography gutterBottom variant="h6" component="div" align="left">
 				WIP Projects
 			</Typography>
 			<Box>
-				<Stack spacing={2}>
-					<PersonalSiteCard />
+				<Stack>
 					<ObsidanoteCard />
 					<MariposaCard />
 					<RollWithItCard />
