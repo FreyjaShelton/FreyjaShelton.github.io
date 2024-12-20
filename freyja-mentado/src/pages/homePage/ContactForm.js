@@ -23,7 +23,7 @@ export default function ContactForm({ onClose }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form Submitted:', formData);
-        
+
         // Sending email via EmailJS
         emailjs
             .send(
@@ -51,18 +51,13 @@ export default function ContactForm({ onClose }) {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 2,
-                padding: 3,
                 maxWidth: 700,
                 width: '100%',
-                bgcolor: 'background.paper',
+                bgcolor: 'transparent',
                 borderRadius: 2,
-                boxShadow: 24,
+                marginTop: 2,
             }}
         >
-            <Typography variant="h6" component="h2" sx={{ textAlign: 'center' }}>
-                Contact Me
-            </Typography>
-
             <TextField
                 label="Name"
                 name="name"
@@ -91,13 +86,36 @@ export default function ContactForm({ onClose }) {
                 required
             />
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', gap: 1 }}>
-                <Button onClick={onClose} color="error">
+                <Button
+                    onClick={onClose}
+                    sx={{
+                        color: '#ff0000', // Red color for "Cancel" button text
+                        backgroundColor: 'transparent', // Transparent background
+                        textTransform: 'none', // Remove uppercase transformation
+                        '&:hover': {
+                            backgroundColor: 'rgba(255, 0, 0, 0.1)', // Slight hover effect
+                        },
+                        fontFamily: 'monospace', // Monospace font
+                    }}
+                >
                     Cancel
                 </Button>
-                <Button type="submit" variant="contained" color="primary">
+                <Button
+                    type="submit"
+                    sx={{
+                        color: '#00ff00', // Green color for "Send" button text
+                        backgroundColor: 'transparent', // Transparent background
+                        textTransform: 'none', // Remove uppercase transformation
+                        '&:hover': {
+                            backgroundColor: 'rgba(0, 255, 0, 0.1)', // Slight hover effect
+                        },
+                        fontFamily: 'monospace', // Monospace font
+                    }}
+                >
                     Send
                 </Button>
             </Box>
+
         </Box>
     );
 }

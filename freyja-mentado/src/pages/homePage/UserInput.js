@@ -38,12 +38,18 @@ export default function UserInput({ onCommand }) {
 
             {/* Inline Autocomplete Input */}
             <Autocomplete
-                freeSolo
                 options={suggestions}
                 inputValue={input}
                 onInputChange={handleInputChange}
+                disablePortal
                 sx={{
-                    width: '360px',
+                    marginLeft: 1,
+                    maxWidth: 600,
+                    width: '100%',
+                    listStyle: 'none',
+                    '& + .MuiAutocomplete-popper .MuiAutocomplete-option ': {
+                        backgroundColor: '#001a00',
+                    }
                 }}
                 renderInput={(params) => (
                     <TextField
@@ -53,12 +59,7 @@ export default function UserInput({ onCommand }) {
                         onKeyDown={handleKeyDown}
                         InputProps={{
                             ...params.InputProps,
-                            style: { color: '#00ff00', fontFamily: 'monospace' },
                             disableUnderline: true,
-                        }}
-                        sx={{
-                            marginLeft: 1,
-                            input: { color: '#00ff00' },
                         }}
                     />
                 )}
