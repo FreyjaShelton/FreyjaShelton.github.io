@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+}
+
+code {
+  font-family: 'Noto Serif', serif;
+}
