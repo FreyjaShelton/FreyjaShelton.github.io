@@ -28,13 +28,22 @@ export default function UserInput({ onCommand }) {
         <Box
             sx={{
                 display: 'flex',
+                flexWrap: 'wrap',
                 alignItems: 'center',
                 color: '#00ff00',
                 fontFamily: 'monospace',
             }}
         >
             {/* Static prompt */}
-            <Typography variant="h6">freyja@mentado:~$ </Typography>
+            <Typography 
+                variant="h6"
+                sx={{
+                    flexBasis: { xs: '100%', sm: 'inherit' }, // Ensures the prompt takes the full width on small screens
+                    textAlign: { xs: 'left', sm: 'inherit' },
+                }}
+            >
+                freyja@mentado:~$
+            </Typography>
 
             {/* Inline Autocomplete Input */}
             <Autocomplete
@@ -43,9 +52,9 @@ export default function UserInput({ onCommand }) {
                 onInputChange={handleInputChange}
                 disablePortal
                 sx={{
-                    marginLeft: 1,
-                    maxWidth: 600,
-                    width: '100%',
+                    marginLeft: { xs: 0, sm: 1 },
+                    flexGrow: 1, // Ensures the input field grows to fill available space
+                    maxWidth: { xs: '100%', sm: 600 },
                     listStyle: 'none',
                     '& + .MuiAutocomplete-popper .MuiAutocomplete-option ': {
                         backgroundColor: '#001a00',

@@ -18,7 +18,7 @@ export default function Root() {
     const typeText = `
 Welcome to my site! 
 Loading About Me...
-I am a software engineer with 6 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, medical, and insurance.`.trim();
+My name is Freyja Mentado. I am a software engineer with 6 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, medical, and insurance.`.trim();
 
     useEffect(() => {
         // Simulate typing effect
@@ -26,7 +26,7 @@ I am a software engineer with 6 years of experience building web applications. M
             const timeout = setTimeout(() => {
                 setTypedText((prev) => prev + typeText[typingIndex]);
                 setTypingIndex((prev) => prev + 1);
-            }, 1);
+            }, .9);
             return () => clearTimeout(timeout);
         } else if (typingIndex >= typeText.length) {
             setIsTyping(false);
@@ -59,6 +59,8 @@ I am a software engineer with 6 years of experience building web applications. M
                 minHeight: '100vh',
                 color: '#00ff00',
                 fontFamily: 'monospace',
+				marginRight: 1,
+				marginLeft: 1,
             }}
         >
             {/* Profile Picture */}

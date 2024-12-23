@@ -16,6 +16,8 @@ export default function FooterComp() {
 					<a 
 						href="https://www.linkedin.com/in/freyja-mentado/"
 						style={{ marginRight: '16px' }}
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<img
 							src={linkedinLogo}
@@ -23,7 +25,11 @@ export default function FooterComp() {
 							width="40"
 							height="40" />
 					</a>
-					<a href="https://github.com/FreyjaMentado">
+					<a 
+						href="https://github.com/FreyjaMentado"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<img
 							src={githubLogo}
 							alt="github"
