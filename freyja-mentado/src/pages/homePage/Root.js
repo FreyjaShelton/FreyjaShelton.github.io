@@ -17,7 +17,7 @@ export default function Root() {
     // Full text for the typing effect
     const typeText = `
 Welcome to my site! 
-My name is Freyja Mentado. I am a software engineer with 6 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, medical, and insurance.`.trim();
+My name is Freyja Mentado. I am a software engineer with 6 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, medical, and insurance. If you would like to view my portfolio or get in contact with me, please use the terminal prompt below to find that information.`.trim();
 
     useEffect(() => {
         // Simulate typing effect

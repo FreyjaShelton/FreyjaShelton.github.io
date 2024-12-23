@@ -40,7 +40,6 @@ export default function Portfolio() {
 			</Typography>
 			<Box>
 				<Stack>
-					<ObsidanoteCard />
 					<MariposaCard />
 					<RollWithItCard />
 				</Stack>
