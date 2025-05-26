@@ -9,7 +9,7 @@ import Portfolio from '../portfolio/Portfolio';
 export default function Root() {
     const [typingIndex, setTypingIndex] = useState(0);
     const [isTyping, setIsTyping] = useState(true);
-    const [typedText, setTypedText] = useState('freyja@mentado:~$ ');
+    const [typedText, setTypedText] = useState('freyja@shelton:~$ ');
 
     const [showContactForm, setShowContactForm] = useState(false);
     const [showPortfolio, setShowPortfolio] = useState(false);
@@ -17,7 +17,7 @@ export default function Root() {
     // Full text for the typing effect
     const typeText = `
 Welcome to my site! 
-My name is Freyja Mentado. I am a software engineer with 6 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, medical, and insurance.`.trim();
+My name is Freyja Shelton. I am a software engineer with 6 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, medical, and insurance.`.trim();
 
     useEffect(() => {
         // Simulate typing effect

@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm run deploy`
 
-Builds and deploys the app to the branch `gh-pages` and changes can be viewed at this [website](https://freyjamentado.github.io/)
+Builds and deploys the app to the branch `gh-pages` and changes can be viewed at this [website](https://freyjashelton.github.io/)
 
 ### `npm test`
 

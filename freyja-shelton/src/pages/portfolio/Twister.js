@@ -10,9 +10,9 @@ export default function TwisterCard() {
 				as a the truck from the movie Twister and try to chase after a
 				tornado and release science pods into the tornado!
 				<br/>
-				The source code can be found <a href="https://github.com/FreyjaMentado/Twister">here.</a>
+				The source code can be found <a href="https://github.com/FreyjaShelton/Twister">here.</a>
 				<br/>
-				You can play the game on itch.io <a href="https://freyjamentado.itch.io/twister">here.</a>
+				You can play the game on itch.io <a href="https://freyjashelton.itch.io/twister">here.</a>
 			</Typography>
 		</CardRoot>
 	);

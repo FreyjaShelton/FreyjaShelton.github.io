@@ -13,9 +13,9 @@ export default function SwashbuckleCard() {
 				My wife, Sephora, helped me with some of the art assets.
 				My friend, Lavonte Pugh, created the music.
 				<br/>
-				The source code can be found <a href="https://github.com/FreyjaMentado/SlimeGame">here.</a>
+				The source code can be found <a href="https://github.com/FreyjaShelton/SlimeGame">here.</a>
 				<br/>
-				You can play the game on itch.io <a href="https://freyjamentado.itch.io/swashbucklin-showdown">here.</a>
+				You can play the game on itch.io <a href="https://freyjashelton.itch.io/swashbucklin-showdown">here.</a>
 			</Typography>
 		</CardRoot>
 	);

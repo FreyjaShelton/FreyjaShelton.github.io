@@ -42,7 +42,7 @@ export default function UserInput({ onCommand }) {
                     textAlign: { xs: 'left', sm: 'inherit' },
                 }}
             >
-                freyja@mentado:~$
+                freyja@shelton:~$
             </Typography>
 
             {/* Inline Autocomplete Input */}

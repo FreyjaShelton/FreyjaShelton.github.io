@@ -14,7 +14,7 @@ export default function FooterComp() {
 			}}>
 				<Box sx={{ textAlign: "center" }}>
 					<a 
-						href="https://www.linkedin.com/in/freyja-mentado/"
+						href="https://www.linkedin.com/in/freyja-shelton/"
 						style={{ marginRight: '16px' }}
 						target="_blank"
 						rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export default function FooterComp() {
 							height="40" />
 					</a>
 					<a 
-						href="https://github.com/FreyjaMentado"
+						href="https://github.com/FreyjaShelton"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -40,7 +40,7 @@ export default function FooterComp() {
 						variant="body2"
 						sx={{
 							textAlign: 'center',
-						}}>© 2024 Freyja Mentado. All Rights Reserved.</Typography>
+						}}>© 2024 Freyja Shelton. All Rights Reserved.</Typography>
 				</Box>
 			</Box>
 			<br/>

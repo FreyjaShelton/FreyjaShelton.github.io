@@ -15,7 +15,7 @@ export default function Source() {
 					<Typography variant="body2"  >
 						This site was written in React and is using Material UI for styling. 
 						<br/>
-						Source Code for this website can be found <a href="https://github.com/FreyjaMentado/FreyjaMentado.github.io">here.</a>
+						Source Code for this website can be found <a href="https://github.com/FreyjaShelton/FreyjaShelton.github.io">here.</a>
 					</Typography>
 				</CardContent>
 			</Card>
