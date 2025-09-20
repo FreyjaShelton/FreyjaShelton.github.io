@@ -9,9 +9,6 @@ export default function SwashbuckleCard() {
 				A game I created for the 2024 Pirate Software Game Jam where you play
 				as a little slime that is trying to cover as much of the pirate ship in slime as she can.
 				The theme for the game jam was "It's Spreading" so I interpreted that as spreading slime all over the stage.
-				I was the developer.
-				My wife, Sephora, helped me with some of the art assets.
-				My friend, Lavonte Pugh, created the music.
 				<br/>
 				The source code can be found <a href="https://github.com/FreyjaShelton/SlimeGame">here.</a>
 				<br/>

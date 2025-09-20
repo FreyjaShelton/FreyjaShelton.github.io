@@ -40,7 +40,7 @@ export default function FooterComp() {
 						variant="body2"
 						sx={{
 							textAlign: 'center',
-						}}>© 2024 Freyja Shelton. All Rights Reserved.</Typography>
+						}}>© 2025 Freyja Shelton. All Rights Reserved.</Typography>
 				</Box>
 			</Box>
 			<br/>

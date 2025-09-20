@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import emailjs from 'emailjs-com'; // Import the EmailJS SDK
 
 export default function ContactForm({ onClose }) {
