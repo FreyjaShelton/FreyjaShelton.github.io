@@ -18,7 +18,6 @@ export default function Portfolio() {
 			</Typography>
 			<Box>
 				<Stack>
-					<SignetCard />
 					<SparqCard />
 					<FinviCard />
 				</Stack>
