@@ -7,7 +7,6 @@ import TwisterCard from "./Twister";
 import FinviCard from "./Finvi";
 import Typography from '@mui/material/Typography';
 import SparqCard from './Sparq';
-import SignetCard from './Signet';
 import PathbuilderCard from './PathBuilder';
 
 export default function Portfolio() {

@@ -41,6 +41,10 @@ My name is Freyja Shelton. I am a software engineer with 7 years of experience b
         } else if (trimmedCommand === 'portfolio') {
             setShowPortfolio(true);
             setShowContactForm(false);
+        } else if (trimmedCommand === 'resume') {
+            setShowPortfolio(false);
+            setShowContactForm(false);
+            displayResume();
         } else if (trimmedCommand === 'clear') {
             setShowPortfolio(false);
             setShowContactForm(false);
@@ -48,6 +52,12 @@ My name is Freyja Shelton. I am a software engineer with 7 years of experience b
             console.log(`Unknown command: ${command}`);
         }
     };
+
+    const displayResume = () => {
+        const resumeUrl = `${process.env.PUBLIC_URL}/resumes/Freyja_Shelton_resume_oct_25_full.pdf`;
+        window.open(resumeUrl, '_blank', 'noopener,noreferrer');
+    };
+
 
     return (
         <Box
@@ -58,8 +68,8 @@ My name is Freyja Shelton. I am a software engineer with 7 years of experience b
                 minHeight: '100vh',
                 color: '#00ff00',
                 fontFamily: 'monospace',
-				marginRight: 1,
-				marginLeft: 1,
+                marginRight: 1,
+                marginLeft: 1,
             }}
         >
             {/* Profile Picture */}
@@ -98,9 +108,9 @@ My name is Freyja Shelton. I am a software engineer with 7 years of experience b
                 {!isTyping && (
                     <Box>
                         {/* Command Line Input */}
-						{!showContactForm &&
-                        	<UserInput onCommand={handleCommand} />
-						}
+                        {!showContactForm &&
+                            <UserInput onCommand={handleCommand} />
+                        }
 
                         {/* Inline Contact Form */}
                         {showContactForm && (

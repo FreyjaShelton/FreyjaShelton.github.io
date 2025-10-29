@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 
 export default function UserInput({ onCommand }) {
     const [input, setInput] = useState('');
-    const suggestions = ['portfolio', 'contact', 'clear'];
+    const suggestions = ['portfolio', 'resume', 'contact', 'clear'];
 
     // Handle input change
     const handleInputChange = (event, newValue) => {
