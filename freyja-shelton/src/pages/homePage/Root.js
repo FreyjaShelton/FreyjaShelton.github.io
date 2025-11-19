@@ -54,7 +54,7 @@ My name is Freyja Shelton. I am a software engineer with 7 years of experience b
     };
 
     const displayResume = () => {
-        const resumeUrl = `${process.env.PUBLIC_URL}/resumes/Freyja_Shelton_resume_oct_25_full.pdf`;
+        const resumeUrl = `${process.env.PUBLIC_URL}/resumes/Freyja_Shelton_resume_nov_25_full.pdf`;
         window.open(resumeUrl, '_blank', 'noopener,noreferrer');
     };
 
