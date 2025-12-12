@@ -17,7 +17,7 @@ export default function Root() {
     // Full text for the typing effect
     const typeText = `
 Welcome to my site! 
-My name is Freyja Shelton. I am a software engineer with 7 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, retail, medical, and insurance.`.trim();
+My name is Freyja Shelton. I am a software engineer with 7 years of experience building web applications. My work focuses on developing technological solutions to address industry-specific needs in ways that enhance efficiency, accessibility and usability. I have helped provide solutions in industries including trucking, retail, medical, and insurance. Please use the terminal below to learn more about projects I have completed, a link to my resume, and a way to get in touch with me.`.trim();
 
     useEffect(() => {
         // Simulate typing effect
