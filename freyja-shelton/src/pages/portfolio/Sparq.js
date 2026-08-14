@@ -6,13 +6,9 @@ export default function SparqCard() {
 	return (
 		<CardRoot title={"Sparq"}>
 			<Typography variant="body2"  >
-				Back end engineer with a focus on .NET. I have worked with several clients
-				across various projects including creating a ticketing software for Variant that
-				handled manager requests from employees out on the road, creating an api
-				for TruStage life insurance that ties together multiple services for their partners
-				to interface with, transitioning ThermaTru's backend to a newer version of a
-				framework, and creating a messaging system for Symplr's backend to allow
-				various services to talk to each other easier.
+				- Aligned technical architecture with customer requirements, reducing rework and accelerating time-to-value
+				- Reduced post-launch defects through unit testing and code review discipline, improving release reliability
+				- Designed and implemented scalable, modular, API-centric architectures using C#, React, and AWS, streamlining development with Git and Azure DevOps CI/CD pipelines
 			</Typography>
 		</CardRoot>
 	);
