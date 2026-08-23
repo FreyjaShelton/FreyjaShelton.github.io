@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Freyja Shelton — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  @page{ size: Letter; margin: 0; }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    width:8.5in; height:11in;
+    font-family:'Inter',Arial,sans-serif;
+    color:#1C1C22;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    width:8.5in; height:11in;
+    padding:0.55in 0.65in;
+  }
+  .name{
+    font-size:26pt;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    margin:0 0 3pt;
+    color:#101014;
+  }
+  .role{
+    font-size:11pt;
+    font-weight:600;
+    color:#3F6E63;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    margin:0 0 8pt;
+  }
+  .contact{
+    font-size:9pt;
+    color:#4B4B55;
+  }
+  .contact-line{ margin:0 0 3pt; }
+  .contact-line:last-child{ margin:0 0 18pt; }
+  .contact a{ color:#4B4B55; text-decoration:none; }
+  .contact span.sep{ color:#B7B7C2; margin:0 6pt; }
+  .contact span.item{ white-space:nowrap; }
+
+  h2{
+    font-size:10pt;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:#3F6E63;
+    border-bottom:1.4pt solid #3F6E63;
+    padding-bottom:4pt;
+    margin:0 0 10pt;
+  }
+  section{ margin-bottom:16pt; }
+  section:last-child{ margin-bottom:0; }
+
+  .job{ margin-bottom:12pt; }
+  .job:last-child{ margin-bottom:0; }
+  .job-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:10pt;
+  }
+  .job-title{
+    font-size:11.5pt;
+    font-weight:700;
+    color:#101014;
+  }
+  .job-meta{
+    font-size:9pt;
+    font-weight:500;
+    color:#6B6B78;
+    white-space:nowrap;
+  }
+  .job-sub{
+    font-size:9.5pt;
+    font-weight:500;
+    color:#3F6E63;
+    margin:1pt 0 5pt;
+  }
+  ul{ margin:0; padding-left:14pt; }
+  li{
+    font-size:9.8pt;
+    line-height:1.42;
+    color:#26262E;
+    margin-bottom:3pt;
+  }
+  li:last-child{ margin-bottom:0; }
+
+  .edu-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+  }
+  .edu-school{ font-size:11.5pt; font-weight:700; color:#101014; }
+  .edu-degree{ font-size:9.8pt; color:#26262E; margin-top:1pt; }
+  .edu-date{ font-size:9pt; color:#6B6B78; white-space:nowrap; }
+
+  .skill-row{
+    display:flex;
+    gap:8pt;
+    font-size:9.6pt;
+    margin-bottom:5pt;
+    line-height:1.4;
+  }
+  .skill-row:last-child{ margin-bottom:0; }
+  .skill-label{
+    font-weight:700;
+    color:#101014;
+    flex-shrink:0;
+    width:78pt;
+  }
+  .skill-values{ color:#3A3A44; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="name">Freyja Shelton</div>
+  <div class="role">Software Engineer</div>
+  <div class="contact">
+    <div class="contact-line"><span class="item"><a href="mailto:freyjashelton@gmail.com">freyjashelton@gmail.com</a></span><span class="sep">|</span><span class="item"><a href="tel:+12603022928">(260) 302-2928</a></span><span class="sep">|</span><span class="item">Fort Wayne, IN</span></div>
+    <div class="contact-line"><span class="item"><a href="https://www.linkedin.com/in/freyja-shelton/">linkedin.com/in/freyja-shelton</a></span><span class="sep">|</span><span class="item"><a href="https://github.com/FreyjaShelton/">github.com/FreyjaShelton</a></span><span class="sep">|</span><span class="item"><a href="https://freyjashelton.github.io/">freyjashelton.github.io</a></span></div>
+  </div>
+
+  <section>
+    <h2>Work Experience</h2>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-meta">Oct 2024 &ndash; Present</span>
+      </div>
+      <div class="job-sub">Signet Jewelers &middot; Fort Wayne, IN</div>
+      <ul>
+        <li>Led a monolith-to-microservices migration, modernizing deployment operations from a single-artifact release to an independently deployable, decoupled system, boosting release frequency from monthly to as needed while maintaining zero application downtime</li>
+        <li>Transformed a monolithic legacy system into modular microservices using a React/C# stack, decoupling domain logic to enable independent deployments and faster feature iteration</li>
+        <li>Refactored backend data layer in C#, eliminating duplicate processing and improving system maintainability</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-meta">May 2021 &ndash; Oct 2024</span>
+      </div>
+      <div class="job-sub">Sparq &middot; Fort Wayne, IN</div>
+      <ul>
+        <li>Aligned technical architecture with customer requirements, reducing rework and accelerating time-to-value</li>
+        <li>Reduced post-launch defects through unit testing and code review discipline, improving release reliability</li>
+        <li>Designed and implemented scalable, modular, API-centric architectures using C#, React, and AWS, streamlining development with Git and Azure DevOps CI/CD pipelines</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-meta">May 2018 &ndash; May 2021</span>
+      </div>
+      <div class="job-sub">Ontario Systems &middot; Muncie, IN</div>
+      <ul>
+        <li>Migrated legacy desktop app to modern web stack, improving accessibility and reducing page load time by 90%</li>
+        <li>Increased developer productivity by automating environment setup with Docker, reducing setup time by over 93% (from 8 hours to 30 minutes)</li>
+        <li>Built JavaScript applications in Agile sprints, balancing velocity with code quality and maintainability standards</li>
+        <li>Mentored 12 junior engineers through legacy-to-web migration, reducing onboarding time by 40%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Taylor University</div>
+        <div class="edu-degree">Bachelor of Science in Computer Science</div>
+      </div>
+      <div class="edu-date">Graduated Jan 2018</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skill-row"><span class="skill-label">Backend</span><span class="skill-values">C#, .NET, Node.js, Python, Java, Go, C/C++, SQL, RDS, Entity Framework, RESTful API, CRON</span></div>
+    <div class="skill-row"><span class="skill-label">Frontend</span><span class="skill-values">HTML, CSS, TypeScript, React, Angular, Bootstrap</span></div>
+    <div class="skill-row"><span class="skill-label">DevOps</span><span class="skill-values">AWS, Azure, EC2, Lambda, Docker, Terraform, Infrastructure as Code, CI/CD Pipelines, Git</span></div>
+    <div class="skill-row"><span class="skill-label">Soft Skills</span><span class="skill-values">Agile, Scrum, Sprint Planning, Backlog Grooming, Retrospectives, Stakeholder Communication, Cross-functional Collaboration, Mentoring, Code Review</span></div>
+  </section>
+</div>
+</body>
+</html>
