@@ -304,6 +304,53 @@
     color:var(--pink-dim);
   }
 
+  /* ---------- PROJECTS ---------- */
+  .project-card{
+    background:var(--surface);
+    border:1px solid var(--surface-line);
+    border-radius:10px;
+    padding:26px 28px;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  .project-card:hover{
+    border-color:var(--pink-dim);
+    transform:translateX(3px);
+    box-shadow:0 8px 24px rgba(0,0,0,0.28);
+  }
+  .project-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:10px;
+  }
+  .project-title{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.22rem;
+    margin:0;
+    color:var(--ink);
+  }
+  .project-link{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.78rem;
+    font-weight:500;
+    color:var(--blue);
+    text-decoration:none;
+    white-space:nowrap;
+    padding-top:4px;
+    transition:color .15s ease;
+  }
+  .project-link:hover{
+    color:var(--pink);
+  }
+  .project-desc{
+    margin:0;
+    font-size:0.96rem;
+    color:#CFCCC3;
+  }
+
   /* ---------- EDUCATION ---------- */
   .edu-card{
     display:flex;
@@ -428,6 +475,7 @@
     <span class="nav-mark">F.SHELTON</span>
     <ul class="nav-links">
       <li><a href="#work">WORK</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
       <li><a href="#education">EDUCATION</a></li>
       <li><a href="#skills">SKILLS</a></li>
       <li><a href="#contact">CONTACT</a></li>
@@ -510,10 +558,27 @@
   </div>
 </section>
 
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">// 02 — PROJECTS</span>
+      <h2>Things I've Tinkered With</h2>
+    </div>
+
+    <div class="project-card">
+      <div class="project-head">
+        <h3 class="project-title">Pathfinder Character Builder</h3>
+        <a class="project-link" href="https://freyjashelton.github.io/pfBuilder/#/home" target="_blank" rel="noopener">View Project ↗</a>
+      </div>
+      <p class="project-desc">A browser-based character creator for Pathfinder 1st Edition. It walks through races, classes, feats, and stats so you can build a character without wrangling spreadsheets and rulebooks by hand.</p>
+    </div>
+  </div>
+</section>
+
 <section id="education">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">// 02 — EDUCATION</span>
+      <span class="kicker">// 03 — EDUCATION</span>
       <h2>Education</h2>
     </div>
     <div class="edu-card">
@@ -529,7 +594,7 @@
 <section id="skills">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">// 03 — SKILLS</span>
+      <span class="kicker">// 04 — SKILLS</span>
       <h2>My Toolkit</h2>
     </div>
 
