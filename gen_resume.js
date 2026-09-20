@@ -1,8 +1,10 @@
 const { chromium } = require('playwright');
 const { pathToFileURL } = require('url');
+const path = require('path');
 
-const SRC = 'C:/Users/freyj/personalWebsite/FreyjaShelton.github.io/resume_template.html';
-const OUT = 'C:/Users/freyj/personalWebsite/FreyjaShelton.github.io/resume.pdf';
+const [srcArg, outArg] = process.argv.slice(2);
+const SRC = path.resolve(srcArg || 'resume_template.html');
+const OUT = path.resolve(outArg || 'resume.pdf');
 
 (async () => {
   const browser = await chromium.launch();
