@@ -345,6 +345,17 @@
   .project-link:hover{
     color:var(--pink);
   }
+  .project-card + .project-card{
+    margin-top:18px;
+  }
+  .project-note{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.78rem;
+    font-weight:500;
+    color:var(--muted);
+    white-space:nowrap;
+    padding-top:4px;
+  }
   .project-desc{
     margin:0;
     font-size:0.96rem;
@@ -556,6 +567,22 @@
         <a class="project-link" href="https://freyjashelton.github.io/pfBuilder/#/home" target="_blank" rel="noopener">View Project ↗</a>
       </div>
       <p class="project-desc">A browser-based character creator for Pathfinder 1st Edition. It walks through races, classes, feats, and stats so you can build a character without wrangling spreadsheets and rulebooks by hand.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-head">
+        <h3 class="project-title">D&amp;D Character Builder</h3>
+        <a class="project-link" href="https://github.com/FreyjaShelton/dndBuilder" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <p class="project-desc">A D&amp;D 5e character builder in the spirit of D&amp;D Beyond, supporting both the 2014 and 2024 rules. A guided wizard builds the character, fills in printable PDF character sheets, and opens an interactive sheet with a dice roller, spell slots, and rests. It runs entirely in the browser, and characters sync across devices through Google Drive.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-head">
+        <h3 class="project-title">Budgeting App</h3>
+        <a class="project-link" href="https://github.com/FreyjaShelton/budgetApp" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <p class="project-desc">A personal zero-based budgeting app built to replace YNAB. It covers assigning every dollar a job, credit card handling, goal tracking, CSV and OFX bank import, reports, and a loan payoff calculator. Data stays in the browser, and it syncs between devices through an encrypted Google Drive backup.</p>
     </div>
   </div>
 </section>
